@@ -1,0 +1,47 @@
+{
+  "name": "electron-fanfou",
+  "version": "0.0.0",
+  "description": "An Electron app for Fanfou",
+  "main": "main/index.js",
+  "scripts": {
+    "test": "xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanfoujs/electron-fanfou.git"
+  },
+  "keywords": [
+    "fanfou"
+  ],
+  "author": "FanfouJS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fanfoujs/electron-fanfou/issues"
+  },
+  "homepage": "https://github.com/fanfoujs/electron-fanfou#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "electron": "^4.0.1",
+    "eslint-config-xo-react": "^0.17.0",
+    "eslint-plugin-react": "^7.12.3",
+    "xo": "^0.23.0"
+  },
+  "dependencies": {
+    "fanfou-sdk": "^3.2.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "xo": {
+    "parser": "babel-eslint",
+    "extends": "xo-react",
+    "envs": [
+      "node",
+      "browser"
+    ],
+    "settings": {
+      "react": {
+        "version": "16.7"
+      }
+    }
+  }
+}
