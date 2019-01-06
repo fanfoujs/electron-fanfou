@@ -4,7 +4,12 @@
   "description": "An Electron app for Fanfou",
   "main": "main/index.js",
   "scripts": {
-    "test": "xo"
+    "test": "xo",
+    "start": "npm i && electron .",
+    "build": "next build renderer && next export renderer",
+    "dist": "npm run build && build",
+    "pack": "npm run build && build --dir",
+    "postinstall": "electron-builder install-app-deps"
   },
   "repository": {
     "type": "git",
@@ -22,14 +27,17 @@
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "electron": "^4.0.1",
+    "electron-builder": "^20.38.4",
     "eslint-config-xo-react": "^0.17.0",
     "eslint-plugin-react": "^7.12.3",
+    "next": "^7.0.2",
     "xo": "^0.23.0"
   },
   "dependencies": {
     "fanfou-sdk": "^3.2.0",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "unstated": "^2.1.1"
   },
   "xo": {
     "parser": "babel-eslint",
