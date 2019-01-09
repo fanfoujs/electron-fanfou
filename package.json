@@ -34,7 +34,9 @@
     "xo": "^0.23.0"
   },
   "dependencies": {
+    "electron-util": "^0.10.2",
     "fanfou-sdk": "^4.0.0",
+    "p-event": "^2.1.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "unstated": "^2.1.1"
