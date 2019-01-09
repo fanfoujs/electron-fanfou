@@ -34,7 +34,7 @@
     "xo": "^0.23.0"
   },
   "dependencies": {
-    "fanfou-sdk": "^3.2.0",
+    "fanfou-sdk": "^4.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "unstated": "^2.1.1"
