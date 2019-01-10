@@ -1,4 +1,8 @@
 node_modules
+/renderer/out
+/renderer/.next
+/app/dist
+/dist
 .vscode
 package-lock.json*
 yarn.lock*

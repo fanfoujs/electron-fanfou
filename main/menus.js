@@ -1,13 +1,16 @@
 'use strict';
 
-const {Menu} = require('electron');
+const {app, Menu} = require('electron');
+const {openAboutWindow} = require('./about');
 
 const menuTemplate = [{
-	label: 'Hello Fanfou'
+	label: `About ${app.getName()}`,
+	click: openAboutWindow
 }, {
 	type: 'separator'
 }, {
-	label: 'test'
+	role: 'quit',
+	accelerator: 'Command+Q'
 }];
 
 const menu = Menu.buildFromTemplate(menuTemplate);

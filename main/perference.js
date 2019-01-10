@@ -5,7 +5,7 @@ const pEvent = require('p-event');
 
 let prefsWindow = null;
 
-const openPrefsWindows = async () => {
+const openPrefsWindow = async () => {
 	if (prefsWindow) {
 		prefsWindow.show();
 		return prefsWindow;
@@ -41,6 +41,6 @@ const closePrefsWindow = () => {
 };
 
 module.exports = {
-	openPrefsWindows,
+	openPrefsWindow,
 	closePrefsWindow
 };
