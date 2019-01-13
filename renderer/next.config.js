@@ -5,5 +5,6 @@ exports.webpack = config => Object.assign(config, {
 });
 
 exports.exportPathMap = () => ({
-	'/about': {page: '/about'}
+	'/about': {page: '/about'},
+	'/login': {page: '/login'}
 });
