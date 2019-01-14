@@ -28,7 +28,7 @@
     "babel-eslint": "^10.0.1",
     "electron": "^4.0.1",
     "electron-builder": "^20.38.4",
-    "eslint-config-xo-react": "^0.17.0",
+    "eslint-config-xo-react": "^0.18.0",
     "eslint-plugin-react": "^7.12.3",
     "next": "^7.0.2",
     "xo": "^0.23.0"
