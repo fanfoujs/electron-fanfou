@@ -1,7 +1,8 @@
 'use strict';
 
-const {BrowserWindow, ipcMain} = require('electron');
-const pEvent = require('p-event');
+const {BrowserWindow} = require('electron');
+const ipc = require('electron-better-ipc');
+const delay = require('delay');
 
 const loadRoute = require('./utils/routes');
 
@@ -14,8 +15,8 @@ const openLoginWindow = async () => {
 	}
 
 	loginWindow = new BrowserWindow({
-		width: 284,
-		height: 200,
+		width: 240,
+		height: 240,
 		resizable: false,
 		maximizable: false,
 		minimizable: false,
@@ -28,13 +29,14 @@ const openLoginWindow = async () => {
 
 	loadRoute(loginWindow, 'login');
 
+	ipc.answerRenderer('login-ready', async () => {
+		await delay(100);
+		loginWindow.show();
+	});
+
 	loginWindow.on('close', () => {
 		loginWindow = null;
 	});
-
-	await pEvent(ipcMain, 'login-ready');
-	loginWindow.show();
-	return loginWindow;
 };
 
 const closeLoginWindow = () => {
