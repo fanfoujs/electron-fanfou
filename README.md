@@ -8,6 +8,12 @@
 
 An Electron app for Fanfou
 
+---
+
+<a href="https://www.patreon.com/LitoMore">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
+
 ## Related
 
 - [fanfou-sdk](https://github.com/LitoMore/fanfou-sdk-node) - Fanfou SDK for Node.js
