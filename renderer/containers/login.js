@@ -9,4 +9,8 @@ export default class LoginContainer extends Container {
 	mount = () => {
 		this.ff = this.remote.require('./common/fanfou');
 	}
+
+	login = (username, password) => {
+		return this.ff.xauth(username, password);
+	}
 }

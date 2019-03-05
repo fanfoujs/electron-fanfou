@@ -1,6 +1,8 @@
 import React from 'react';
 import {Subscribe} from 'unstated';
 
+import LoginContainer from './login';
+
 export const connect = (containers, mapState, mapAction) => Component => props => (
 	<Subscribe to={containers}>
 		{(...containers) => {
@@ -12,3 +14,7 @@ export const connect = (containers, mapState, mapAction) => Component => props =
 		}}
 	</Subscribe>
 );
+
+export {
+	LoginContainer
+};

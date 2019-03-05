@@ -1,12 +1,16 @@
 import React from 'react';
 import {Form, Icon, Input, Button} from 'antd';
+import {connect, LoginContainer} from '../containers';
 
 class LoginForm extends React.Component {
 	handleSubmit = e => {
 		e.preventDefault();
-		this.props.form.validateFields((err, values) => {
+		this.props.form.validateFields(async (err, values) => {
 			if (!err) {
-				console.log('Received values of form:', values);
+				const {username, password} = values;
+				const {login} = this.props;
+				const {oauthToken, oauthTokenSecret} = await login(username, password);
+				console.log(oauthToken, oauthTokenSecret);
 			}
 		});
 	}
@@ -39,4 +43,8 @@ class LoginForm extends React.Component {
 	}
 }
 
-export default Form.create({name: 'login-form'})(LoginForm);
+export default connect(
+	[LoginContainer],
+	() => ({}),
+	({login}) => ({login})
+)(Form.create({name: 'login-form'})(LoginForm));
