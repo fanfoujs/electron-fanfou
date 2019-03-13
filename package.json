@@ -45,7 +45,7 @@
     "electron-util": "^0.10.2",
     "fanfou-sdk": "^4.0.4",
     "file-icon": "^3.1.0",
-    "p-event": "^3.0.0",
+    "p-event": "^4.0.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "unstated": "^2.1.1"
