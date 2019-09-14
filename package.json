@@ -38,7 +38,7 @@
     "@zeit/next-css": "^1.0.1",
     "antd": "^3.14.1",
     "delay": "^4.1.0",
-    "electron-better-ipc": "^0.3.0",
+    "electron-better-ipc": "^0.5.0",
     "electron-log": "^3.0.2",
     "electron-next": "^3.1.5",
     "electron-store": "^4.0.0",
