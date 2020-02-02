@@ -29,7 +29,7 @@
     "electron": "^7.0.0",
     "electron-builder": "^22.1.0",
     "eslint-config-xo-react": "^0.22.0",
-    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react": "^7.18.2",
     "eslint-plugin-react-hooks": "^2.0.0",
     "next": "^9.0.0",
     "xo": "^0.25.3"
