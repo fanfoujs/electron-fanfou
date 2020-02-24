@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
-    "antd": "^3.14.1",
+    "antd": "^3.26.12",
     "delay": "^4.1.0",
     "electron-better-ipc": "^0.8.0",
     "electron-log": "^4.0.0",
