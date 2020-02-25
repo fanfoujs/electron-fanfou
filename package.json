@@ -39,7 +39,7 @@
     "antd": "^3.14.1",
     "delay": "^4.1.0",
     "electron-better-ipc": "^0.8.0",
-    "electron-log": "^4.0.0",
+    "electron-log": "^4.0.7",
     "electron-next": "^3.1.5",
     "electron-store": "^5.0.0",
     "electron-util": "^0.13.0",
