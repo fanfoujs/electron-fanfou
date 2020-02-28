@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/fanfoujs/electron-fanfou#readme",
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.1.0",
     "electron": "^7.0.0",
     "electron-builder": "^22.1.0",
     "eslint-config-xo-react": "^0.22.0",
